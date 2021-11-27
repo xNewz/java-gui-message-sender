@@ -26,5 +26,9 @@ public class message extends Application {
         mTextMsg.setPrefWidth(180);
         mTextMsg.setPrefHeight(150);
         mTextMsg.setOnKeyReleased(e -> mTextMsg_onKeyReleased());
+
+        mLabelTextLength = new Label("0/" + MAX_LENGTH);
+        mButtonAttach = new Button(" Attach  ");
+        mButtonSend = new Button("   Send   ");
     }
 }
