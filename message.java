@@ -7,3 +7,12 @@ import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.GridPane;
 import javafx.stage.Stage;
+
+public class message extends Application {
+    private TextField mTextReciever;
+    private Button mButtonContact;
+    private Button mButtonAttach, mButtonSend;
+    private TextArea mTextMsg;
+    private Label mLabelTextLength;
+    private final int MAX_LENGTH = 160;
+}
