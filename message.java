@@ -42,5 +42,8 @@ public class message extends Application {
         gridPane.add(mLabelTextLength, 1, 1);
         gridPane.add(mButtonAttach, 1, 2);
         gridPane.add(mButtonSend, 1, 3);
+
+        stage.setScene(new Scene(gridPane));
+        stage.show();
     }
 }
