@@ -17,6 +17,8 @@ public class message extends Application {
     private final int MAX_LENGTH = 160;
 
     public void start(Stage stage) {
-    
+        mTextReciever = new TextField();
+        mTextReciever.setPromptText("Reciever");
+        mButtonContact = new Button("Contact");
     }
 }
