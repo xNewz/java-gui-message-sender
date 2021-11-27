@@ -20,5 +20,11 @@ public class message extends Application {
         mTextReciever = new TextField();
         mTextReciever.setPromptText("Reciever");
         mButtonContact = new Button("Contact");
+
+        mTextMsg = new TextArea();
+        mTextMsg.setPromptText("Message");
+        mTextMsg.setPrefWidth(180);
+        mTextMsg.setPrefHeight(150);
+        mTextMsg.setOnKeyReleased(e -> mTextMsg_onKeyReleased());
     }
 }
