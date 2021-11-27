@@ -15,4 +15,8 @@ public class message extends Application {
     private TextArea mTextMsg;
     private Label mLabelTextLength;
     private final int MAX_LENGTH = 160;
+
+    public void start(Stage stage) {
+    
+    }
 }
