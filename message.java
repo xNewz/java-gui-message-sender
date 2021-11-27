@@ -30,5 +30,17 @@ public class message extends Application {
         mLabelTextLength = new Label("0/" + MAX_LENGTH);
         mButtonAttach = new Button(" Attach  ");
         mButtonSend = new Button("   Send   ");
+
+        GridPane gridPane = new GridPane();
+        gridPane.setPadding(new Insets(10));
+        gridPane.setHgap(5);
+        gridPane.setVgap(10);
+
+        gridPane.add(mTextReciever, 0, 0);
+        gridPane.add(mButtonContact, 1, 0);
+        gridPane.add(mTextMsg, 0, 1, 1, 3);
+        gridPane.add(mLabelTextLength, 1, 1);
+        gridPane.add(mButtonAttach, 1, 2);
+        gridPane.add(mButtonSend, 1, 3);
     }
 }
