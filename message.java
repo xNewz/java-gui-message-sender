@@ -45,5 +45,15 @@ public class message extends Application {
 
         stage.setScene(new Scene(gridPane));
         stage.show();
+
+        private void mTextMsg_onKeyReleased() {
+            int length = mTextMsg.getLength();
+            if(length > MAX_LENGTH) {
+                  mTextMsg.deletePreviousChar();
+                  length = mTextMsg.getLength();
+            }
+            String str = length + "/" + MAX_LENGTH;
+            mLabelTextLength.setText(str);
+        }
     }
 }
